@@ -1,0 +1,112 @@
+body{
+    width:100vw;
+}
+
+.display-list{
+    display: flex;
+    flex-flow: column;
+    width: 80vw;
+    align-items: center;
+}
+
+main div{
+    /*background-color: crimson;*/
+    padding: 1wv 1vh;
+    margin-bottom: 2vh;
+    width: 100%;
+    
+
+
+
+}
+
+img{
+    height: auto;
+    width: 20vh;
+}
+div span{
+    color: rgb(59, 196, 31);
+  
+}
+
+div a{
+    color: rgb(53, 53, 227);
+    
+
+}
+
+.double-pannel {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  gap: 15px; 
+}
+
+.card_pannel{
+ display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+  gap: 15px; 
+}
+
+/*.bottom{
+display: grid;
+grid-template-columns: repeat(3, 0.05fr);
+grid-template-rows: 0.2fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}*/
+
+.bottom{
+margin-left: 8vh;
+}
+
+footer{
+background-color: rgb(74, 96, 177);
+width:100%;
+}
+button{
+    background-color: inherit;
+    color: #fff;
+    height: 6vh;
+    margin-left: 2.5vh;
+    width: 6.75vh;
+    font-size: 100%;
+      display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 2px dotted #bababa;
+  border-radius: 5px;
+}
+
+
+.span{
+margin-right: 7%;
+}
+
+
+header{
+    height: 50vh;
+    background-color: rgb(62,63,65);
+}
+
+.fileName{
+    color: rgb(122, 122, 122);
+    margin-left: 7vh;
+    margin-top: 10vh;
+}
+
+.lables{
+    margin-bottom: 10%;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, max-content); /* Колонки только по ширине контента */
+    grid-column-gap: 20px; /* Добавьте отступ между ними, если нужно */
+    justify-content: start;
+}
+
+.tabs{
+    color: #fff;
+    background-color:rgb(74, 96, 177);
+    border: solid #fff;
+}
