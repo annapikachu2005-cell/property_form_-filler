@@ -39,7 +39,7 @@ div a{
   display: grid;
   width: 80%;
   margin: 0 auto; 
-  grid-template-columns: repeat(auto-fit, minmax(3000px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 .card_pannel div span{
    /* margin-left: -30vw;*/

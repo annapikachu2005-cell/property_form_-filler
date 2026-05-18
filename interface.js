@@ -32,7 +32,7 @@ header.style.display = "none";
 let newValues = ["","list colums", "card icons", "cropping", "gallery screen", "two panels"];
 //let newValues = ["reset selection","group description", "select description", "transfer media", "change srce/ dest", "display settings"];
 
-galleryScreen.addEventListener("click", function() {
+pannels.addEventListener("click", function() {
    header.style.display = "block"; 
 
 });
