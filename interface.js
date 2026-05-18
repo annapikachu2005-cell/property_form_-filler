@@ -3,9 +3,8 @@
 //Текст внутри кнопок должен оставаться на своем месте и не заезжать за пределы экрана или кнопок. При любом размере экрана пользователь должен иметь возможность нажать на кнопку без каких-либо препятствий.
 //Кнопка список /колонки должна иметь две функции. В зависимости от отображаемого на экране режима соответствующее слово должно выделяться ярким белым цветом.
 //Вариант с двумя панелями должен иметь яркую черту посередине как показано на рисунке.
-//Дополнительные информация в списке должна постоянно отображаться при активации варианта просмотра список.
 
-//Размер текста должен подстраиваться под размер экрана.
+
 //
 //
 //
@@ -23,7 +22,7 @@ let footer = document.querySelector("footer");
 let tabs = document.getElementById("tabs");
 let main = document.querySelector("main");
 let header = document.querySelector("header");
-let galleryScreen = document.getElementById("gallery_screen"); 
+let pannels = document.getElementById("pannels"); 
 let bottom = document.getElementsByClassName("bottom");
 let options = document.getElementsByClassName("options");
 
@@ -38,7 +37,7 @@ galleryScreen.addEventListener("click", function() {
 
 });
 
-displaySettings.addEventListener("click", function(){
+pannels.addEventListener("click", function(){
     main.classList.add("double-pannel");
     main.classList.remove("card_pannel");
     for (let i = 0; i < options.length; i++) {      
