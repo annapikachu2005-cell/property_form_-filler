@@ -1,5 +1,6 @@
 body{
     height: 100%;
+    align-items: center;
 }
 
 .display-list{
@@ -33,20 +34,52 @@ div a{
   display: grid;
   grid-template-columns: 0.1fr 0.3fr;
   gap: 1px; 
+  border-right: 6px solid rgb(64, 64, 255);
+  width:100%;
 }
 
 .card_pannel{
-  display: grid;
-  width: 80%;
-  margin: 0 auto; 
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-.card_pannel div span{
-   /* margin-left: -30vw;*/
+ display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-around;
+  gap: 1px; 
+  margin-left:10vh;
+ 
 }
 
-.card_pannel div img{
-    width:50%;
+.card_pannel div img {
+    width: 270%;
+}
+
+@media (max-width: 600px) {
+    .card_pannel{
+    background-color: aquamarine;
+     /*width: 200%;*/
+     }
+
+.card_pannel div img {
+    width: 130%;
+}
+
+.card_pannel div  {
+   /*margin-left: -105vw;*/
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+}
+
+footer {
+display: grid;
+grid-template-columns: repeat(6, 0.15fr);
+grid-template-rows: 0.15fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+button{
+    height: 6vh;
+    margin-left: 1.25vh;
+    width: 3.5vh;
+
 }
 
 .bottom{
@@ -56,6 +89,14 @@ margin-left:0;
   left: 0;
 }
 
+button{
+
+    height: 3vh;
+    margin-left: 2.5vh;
+    width: 3.38vh;
+  
+}
+}
 footer{
 background-color: rgb(74, 96, 177);
 width:100%;
@@ -69,26 +110,24 @@ button{
     background-color: inherit;
     color: #fff;
     height: 6vh;
-    margin-left: 2.5vh;
-    width: 6.75vh;
-    font-size: 75%;
-   display: grid;
-grid-template-columns: repeat(6, 0.1fr);
-grid-template-rows: 0.05fr;
-grid-column-gap: 24px;
-
-  flex-direction: column;
-  justify-content: flex-end;
+    margin-left: 5%;
+    width: 9%;
   border: 2px dotted #bababa;
   border-radius: 5px;
   float: left;
   display: block;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  /*font-size: 17px;*/
+  /*padding: 14px 16px;
+  text-decoration: none;*/
     font-size: 75%;
     left:0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+      display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /*padding-bottom: 3px;*/
 }
 
 .span{

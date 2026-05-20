@@ -32,22 +32,20 @@ header.style.display = "none";
 let newValues = ["","list colums", "card icons", "cropping", "gallery screen", "two panels"];
 //let newValues = ["reset selection","group description", "select description", "transfer media", "change srce/ dest", "display settings"];
 
-pannels.addEventListener("click", function() {
-   header.style.display = "block"; 
 
-});
 
 pannels.addEventListener("click", function(){
+    header.style.display = "block"; 
+    main.classList.value = "";
     main.classList.add("double-pannel");
-    main.classList.remove("card_pannel");
+
     for (let i = 0; i < options.length; i++) {      
         bottom[i].style.display = "none"; 
     }
 });
 
 list.addEventListener("click", function(){
-    log("hello");
-    main.classList.remove("double-pannel", "card_pannel");
+    main.classList.value = "";
         for (let i = 0; i < options.length; i++) {        
         options[i].innerHTML= '<div class="options"><img src="IMG_2353.jpeg" alt=""><span class="lables"><span class = "fileName">IMG_20260406s.jpg </span><span class = "bottom"><span>4:3</span> <a href="">1200:900 pixels 11,2 Mb</a><span>.jpg</span></span></span></div>';
         }
@@ -61,7 +59,7 @@ tabs.addEventListener("click", function(){
 });
 
 icons.addEventListener("click", function(){
-    main.classList.remove("double-pannel");
+   main.classList.value = "";
     main.classList.add("card_pannel");
     for (let i = 0; i < options.length; i++) {      
         options[i].innerHTML = ' <img src="IMG_2353.jpeg" alt=""> <span class="lables"><span class = "fileName">IMG_20260406s.jpg </span></span>'; 
