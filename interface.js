@@ -17,15 +17,15 @@ let log = console.log;
 let arrow = document.getElementById("arrow");
 let list = document.getElementById("list");
 let icons = document.getElementById("icons");
-let displaySettings = document.getElementById("arrow");
+
 let footer = document.querySelector("footer");
-let tabs = document.getElementById("tabs");
+let tabs = document.getElementsByClassName("tabs");
 let main = document.querySelector("main");
 let header = document.querySelector("header");
 let pannels = document.getElementById("pannels"); 
 let bottom = document.getElementsByClassName("bottom");
 let options = document.getElementsByClassName("options");
-
+ let elements = document.getElementsByClassName("lables");
 footer.style.display = "none";
 header.style.display = "none"; 
 
@@ -39,31 +39,42 @@ pannels.addEventListener("click", function(){
     main.classList.value = "";
     main.classList.add("double-pannel");
 
-    for (let i = 0; i < options.length; i++) {      
+    for (let i = 0; i <= options.length; i++) {      
         bottom[i].style.display = "none"; 
     }
 });
 
 list.addEventListener("click", function(){
     main.classList.value = "";
-        for (let i = 0; i < options.length; i++) {        
+        for (let i = 0; i <= options.length; i++) {        
         options[i].innerHTML= '<div class="options"><img src="IMG_2353.jpeg" alt=""><span class="lables"><span class = "fileName">IMG_20260406s.jpg </span><span class = "bottom"><span>4:3</span> <a href="">1200:900 pixels 11,2 Mb</a><span>.jpg</span></span></span></div>';
         }
 });
 
-tabs.addEventListener("click", function(){
+tabs[0].addEventListener("click", function(){
     log("hello");
     footer.style.display = "block";
     tabs.style.bottom = "7%";
     /*bottom.style.margin.left = "2vh";*/
 });
 
+
+
+tabs[1].addEventListener("click", function(){
+    log("hello");
+    footer.style.display = "block";
+    //tabs.style.bottom = "7%";
+    /*bottom.style.margin.left = "2vh";*/
+});
+
 icons.addEventListener("click", function(){
    main.classList.value = "";
     main.classList.add("card_pannel");
-    for (let i = 0; i < options.length; i++) {      
-        options[i].innerHTML = ' <img src="IMG_2353.jpeg" alt=""> <span class="lables"><span class = "fileName">IMG_20260406s.jpg </span></span>'; 
-        }
+      
+    //for (let i = 0; i < options.length; i++) {
+      //  options[i].removeChild(elements[i]);
+        
+    //}
 
 });
 /*let iconState = 0; 
@@ -116,7 +127,8 @@ document.addEventListener("dragover", function(e) {
 */
 arrow.addEventListener("click", function(){
     let elements = footer.querySelectorAll("button"); 
-    for (let i = 0; i < elements.length; i++) {
+    for (let i = 0; i <= elements.length; i++) {
         if (newValues[i]) elements[i].textContent = newValues[i];
     }
 });
+
