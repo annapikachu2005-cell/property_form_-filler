@@ -1,6 +1,5 @@
-//Необходимо разместить по центру весь дизайн.
 
-//Текст внутри кнопок должен оставаться на своем месте и не заезжать за пределы экрана или кнопок. При любом размере экрана пользователь должен иметь возможность нажать на кнопку без каких-либо препятствий.
+
 //Кнопка список /колонки должна иметь две функции. В зависимости от отображаемого на экране режима соответствующее слово должно выделяться ярким белым цветом.
 //Вариант с двумя панелями должен иметь яркую черту посередине как показано на рисунке.
 
@@ -14,19 +13,23 @@
 
 let log = console.log;
 
-let arrow = document.getElementById("arrow");
-let list = document.getElementById("list");
-let icons = document.getElementById("icons");
+let resetSelection = document.getElementById("reset-selection");
+let groupDescription = document.getElementById("group-description");
+let selectDescription = document.getElementById("select-description");
 
 let footer = document.querySelector("footer");
 let tabs = document.getElementsByClassName("tabs");
 let main = document.querySelector("main");
 let header = document.querySelector("header");
-let pannels = document.getElementById("pannels"); 
+
+let displaySettings = document.getElementById("display-settings"); 
+
 let bottom = document.getElementsByClassName("bottom");
 let options = document.getElementsByClassName("options");
  let elements = document.getElementsByClassName("lables");
  let images = document.querySelectorAll("img");
+
+ let settingsOn = false;
  log(images);
 footer.style.display = "none";
 header.style.display = "none"; 
@@ -34,9 +37,11 @@ header.style.display = "none";
 let newValues = ["","list colums", "card icons", "cropping", "gallery screen", "two panels"];
 //let newValues = ["reset selection","group description", "select description", "transfer media", "change srce/ dest", "display settings"];
 
+if (settingsOn) {
+    
 
 
-pannels.addEventListener("click", function(){
+/*displaySettings.addEventListener("click", function(){
     header.style.display = "block"; 
     main.classList.value = "";
     main.classList.add("double-pannel");
@@ -44,9 +49,9 @@ pannels.addEventListener("click", function(){
     for (let i = 0; i <= options.length; i++) {      
         bottom[i].style.display = "none"; 
     }
-});
+});*/
 
-list.addEventListener("click", function(){
+groupDescription.addEventListener("click", function(){
     /*main.classList.value = "";*/
         for (let i = 0; i <= options.length; i++) {        
         /*options[i].innerHTML= '<div class="options"><img src="IMG_2353.jpeg" alt=""><span class="lables"><span class = "fileName">IMG_20260406s.jpg </span><span class = "bottom"><span>4:3</span> <a href="">1200:900 pixels 11,2 Mb</a><span>.jpg</span></span></span></div>';*/
@@ -57,29 +62,16 @@ list.addEventListener("click", function(){
 
 });
 
-tabs[0].addEventListener("click", function(){
-    log("hello");
-    footer.style.display = "block";
-    /*tabs.style.bottom = "7%";*/
-    /*bottom.style.margin.left = "2vh";*/
-});
 
 
-
-tabs[1].addEventListener("click", function(){
-    log("hello");
-    footer.style.display = "block";
-    //tabs.style.bottom = "7%";
-    /*bottom.style.margin.left = "2vh";*/
-});
-
-icons.addEventListener("click", function(){
+selectDescription.addEventListener("click", function(){
    /*main.classList.value = "";
     main.classList.add("card_pannel");*/
       
     for (let i = 0; i < options.length; i++) {
         bottom[i].style.display = "none";
-        images[i].style.width = "80%";
+        //images[i].style.width = "80%";
+        images[i].style.width = "70%";
         options[i].style.display = "flex";
         options[i].style.justifyContent = "space-between";
         options[i].style.flexDirection = "column"
@@ -142,10 +134,29 @@ document.addEventListener("dragover", function(e) {
 });
 
 */
-arrow.addEventListener("click", function(){
-    let elements = footer.querySelectorAll("button"); 
-    for (let i = 0; i <= elements.length; i++) {
-        if (newValues[i]) elements[i].textContent = newValues[i];
-    }
+
+}
+tabs[0].addEventListener("click", function(){
+    log("hello");
+    footer.style.display = "block";
+    /*tabs.style.bottom = "7%";*/
+    /*bottom.style.margin.left = "2vh";*/
 });
 
+
+
+tabs[1].addEventListener("click", function(){
+    log("hello");
+    footer.style.display = "block";
+    //tabs.style.bottom = "7%";
+    /*bottom.style.margin.left = "2vh";*/
+});
+
+displaySettings.addEventListener("click", function(){
+    let buttons = footer.querySelectorAll("button"); 
+    settingsOn = true
+    for (let i = 0; i <= newValues.length-1; i++) {
+        log(newValues[i]);
+        log(buttons.textContent);
+    }
+});
