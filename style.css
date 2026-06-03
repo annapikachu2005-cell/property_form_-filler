@@ -19,7 +19,7 @@ main div{
 
 img{
     height: auto;
-    width: 95%;
+    width: 130%;
 }
 div span{
     color: rgb(59, 196, 31); 
@@ -41,7 +41,9 @@ div a{
 .card_pannel{
  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-content: space-around;
+  display:flex;
+  justify-content: space-between;
+  align-items:flex-end;
   gap: 1px; 
   margin-left:10vh;
  
@@ -57,16 +59,19 @@ div a{
      /*width: 200%;*/
      }
 
-.card_pannel div img {
-    width: 130%;
+.card_pannel div  {
+    display:grid;
+    grid-template-columns:4rem 8rem;
+    
+
 }
 
-.card_pannel div  {
-   /*margin-left: -105vw;*/
+/*.card_pannel div  {
+   margin-left: -105vw;
    display: flex;
    flex-flow: column;
    align-items: center;
-}
+}*/
 
 footer {
 display: grid;
@@ -87,6 +92,8 @@ margin-left:0;
   position: absolute;
   bottom: 0;
   left: 0;
+  display:flex;
+  align-items:flex-end;
 }
 
 button{
@@ -156,8 +163,8 @@ header{
 
 .options {
   display: grid;
-  grid-template-columns: 4rem 20rem;
-  grid-template-rows: 4rem;
+  grid-template-columns: 4rem 8rem;
+  /*grid-template-rows: 4rem;*/
 }
 
 #tabs{
@@ -178,4 +185,5 @@ main{
       display: grid;
   grid-template-columns: 40rem;
   height: 75vh;
+  width:30%;
 }

@@ -26,6 +26,8 @@ let pannels = document.getElementById("pannels");
 let bottom = document.getElementsByClassName("bottom");
 let options = document.getElementsByClassName("options");
  let elements = document.getElementsByClassName("lables");
+ let images = document.querySelectorAll("img");
+ log(images);
 footer.style.display = "none";
 header.style.display = "none"; 
 
@@ -45,16 +47,20 @@ pannels.addEventListener("click", function(){
 });
 
 list.addEventListener("click", function(){
-    main.classList.value = "";
+    /*main.classList.value = "";*/
         for (let i = 0; i <= options.length; i++) {        
-        options[i].innerHTML= '<div class="options"><img src="IMG_2353.jpeg" alt=""><span class="lables"><span class = "fileName">IMG_20260406s.jpg </span><span class = "bottom"><span>4:3</span> <a href="">1200:900 pixels 11,2 Mb</a><span>.jpg</span></span></span></div>';
-        }
+        /*options[i].innerHTML= '<div class="options"><img src="IMG_2353.jpeg" alt=""><span class="lables"><span class = "fileName">IMG_20260406s.jpg </span><span class = "bottom"><span>4:3</span> <a href="">1200:900 pixels 11,2 Mb</a><span>.jpg</span></span></span></div>';*/
+        bottom[i].style.display = "block";
+        } 
+          /*main.style.gridTemplateColumns = "0.75fr 0.75fr 0.75fr 0.75fr";*/
+          main.style.cssText = "";
+
 });
 
 tabs[0].addEventListener("click", function(){
     log("hello");
     footer.style.display = "block";
-    tabs.style.bottom = "7%";
+    /*tabs.style.bottom = "7%";*/
     /*bottom.style.margin.left = "2vh";*/
 });
 
@@ -68,13 +74,24 @@ tabs[1].addEventListener("click", function(){
 });
 
 icons.addEventListener("click", function(){
-   main.classList.value = "";
-    main.classList.add("card_pannel");
+   /*main.classList.value = "";
+    main.classList.add("card_pannel");*/
       
-    //for (let i = 0; i < options.length; i++) {
-      //  options[i].removeChild(elements[i]);
-        
-    //}
+    for (let i = 0; i < options.length; i++) {
+        bottom[i].style.display = "none";
+        images[i].style.width = "80%";
+        options[i].style.display = "flex";
+        options[i].style.justifyContent = "space-between";
+        options[i].style.flexDirection = "column"
+        elements[i].style.alignItems = "flex-end";
+        elements[i].style.marginTop = "auto";
+    }
+     //main.style.display = "grid";
+    //main.style.gridTemplateColumns = "0.75fr 0.75fr 0.75fr 0.75fr";
+    main.style.gridTemplateColumns = "0.5fr 0.5fr 0.5fr 0.5fr";
+    //main.style.display = "flex";
+    //main.style.justifyContent = "space-between";
+
 
 });
 /*let iconState = 0; 
