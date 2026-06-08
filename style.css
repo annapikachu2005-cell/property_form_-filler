@@ -162,11 +162,12 @@ header{
 .lables{
     position: relative;
     height:80%;
+    margin-left: 2.5vh;
 }
 
 .options {
   display: grid;
-  grid-template-columns: 4rem 8rem;
+  grid-template-columns: 3rem 20rem;
   /*grid-template-rows: 4rem;*/
 }
 

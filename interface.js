@@ -35,12 +35,38 @@ footer.style.display = "none";
 header.style.display = "none"; 
 
 let newValues = ["","list colums", "card icons", "cropping", "gallery screen", "two panels"];
-//let newValues = ["reset selection","group description", "select description", "transfer media", "change srce/ dest", "display settings"];
+let oldValues = ["reset selection","group description", "select description", "transfer media", "change srce/ dest", "display settings"];
+
+displaySettings.addEventListener("click", function(){
+    let buttons = footer.querySelectorAll("button"); 
+    //settingsOn = true
+    for (let i = 0; i <= newValues.length-1; i++) {
+        //log(newValues[i]);
+        //log(buttons.textContent);
+        log(buttons[i].textContent);
+        buttons[i].textContent = newValues[i];
+    }
+    
+});
+settingsOn = true;
+log(settingsOn);
 
 if (settingsOn) {
     
+log("in the event");
 
 
+resetSelection.addEventListener("click", function(){
+         let buttons = footer.querySelectorAll("button"); 
+    //settingsOn = true
+    for (let i = 0; i <= newValues.length-1; i++) {
+        //log(newValues[i]);
+        //log(buttons.textContent);
+        log(buttons[i].textContent);
+        buttons[i].textContent = oldValues[i];
+    }
+});
+settingsOn = false;
 /*displaySettings.addEventListener("click", function(){
     header.style.display = "block"; 
     main.classList.value = "";
@@ -55,10 +81,11 @@ groupDescription.addEventListener("click", function(){
     /*main.classList.value = "";*/
         for (let i = 0; i <= options.length; i++) {        
         /*options[i].innerHTML= '<div class="options"><img src="IMG_2353.jpeg" alt=""><span class="lables"><span class = "fileName">IMG_20260406s.jpg </span><span class = "bottom"><span>4:3</span> <a href="">1200:900 pixels 11,2 Mb</a><span>.jpg</span></span></span></div>';*/
-        bottom[i].style.display = "block";
+        //bottom[i].style.display = "block";
         } 
           /*main.style.gridTemplateColumns = "0.75fr 0.75fr 0.75fr 0.75fr";*/
           main.style.cssText = "";
+          main.style.gridTemplateColumns = "3rem 20rem";
 
 });
 
@@ -86,54 +113,7 @@ selectDescription.addEventListener("click", function(){
 
 
 });
-/*let iconState = 0; 
-icons.addEventListener("click", function(){
-    let options = document.querySelectorAll(".options");
-    iconState++;
 
-    if (iconState === 1) {
-     
-        options.forEach(el => el.style.flexDirection = "column");
-    } else if (iconState === 2) {
-
-        main.classList.add("card_pannel"); 
-        options.forEach(el => el.style.flexDirection = "row"); 
-    } else {
-       
-        main.classList.remove("card_pannel");
-        options.forEach(el => el.style.flexDirection = "row");
-        iconState = 0;
-    }
-});
-
-
-tabs.setAttribute('draggable', 'true');
-
-tabs.addEventListener("dragstart", function(e) {
-    footer.style.display = "flex"; 
-    this.style.opacity = "0.5";
-    e.dataTransfer.setData('text/plain', ''); 
-});
-
-tabs.addEventListener("dragend", function() {
-    this.style.opacity = "0";
-});
-
-document.addEventListener("dragover", function(e) {
-    e.preventDefault(); 
-    const footerTop = footer.getBoundingClientRect().top;
-    const tabsHeight = tabs.offsetHeight;
-    let newTop = e.clientY;
-    
-    if (newTop + tabsHeight > footerTop) {
-        newTop = footerTop - tabsHeight;
-    }
-
-    tabs.style.position = "fixed"; 
-    tabs.style.top = newTop + "px";
-});
-
-*/
 
 }
 tabs[0].addEventListener("click", function(){
@@ -152,11 +132,4 @@ tabs[1].addEventListener("click", function(){
     /*bottom.style.margin.left = "2vh";*/
 });
 
-displaySettings.addEventListener("click", function(){
-    let buttons = footer.querySelectorAll("button"); 
-    settingsOn = true
-    for (let i = 0; i <= newValues.length-1; i++) {
-        log(newValues[i]);
-        log(buttons.textContent);
-    }
-});
+
