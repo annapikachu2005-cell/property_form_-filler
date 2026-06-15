@@ -81,11 +81,17 @@ groupDescription.addEventListener("click", function(){
     /*main.classList.value = "";*/
         for (let i = 0; i <= options.length; i++) {        
         /*options[i].innerHTML= '<div class="options"><img src="IMG_2353.jpeg" alt=""><span class="lables"><span class = "fileName">IMG_20260406s.jpg </span><span class = "bottom"><span>4:3</span> <a href="">1200:900 pixels 11,2 Mb</a><span>.jpg</span></span></span></div>';*/
-        //bottom[i].style.display = "block";
+       bottom[i].style.display = "block";
+        log(images[i]);
+        images[i].style.height="6vh"
+        images[i].style.width="7vh"
         } 
           /*main.style.gridTemplateColumns = "0.75fr 0.75fr 0.75fr 0.75fr";*/
-          main.style.cssText = "";
+          //main.style.cssText = "";
+          options[i].style.display = "grid";
           main.style.gridTemplateColumns = "3rem 20rem";
+          
+
 
 });
 
@@ -121,6 +127,7 @@ tabs[0].addEventListener("click", function(){
     footer.style.display = "block";
     /*tabs.style.bottom = "7%";*/
     /*bottom.style.margin.left = "2vh";*/
+    tabs[0].style.bottom = "10vh";
 });
 
 
@@ -130,6 +137,7 @@ tabs[1].addEventListener("click", function(){
     footer.style.display = "block";
     //tabs.style.bottom = "7%";
     /*bottom.style.margin.left = "2vh";*/
+    tabs[0].style.bottom = "10vh";
 });
 
 

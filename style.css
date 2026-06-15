@@ -172,11 +172,12 @@ header{
   /*grid-template-rows: 4rem;*/
 }
 
-#tabs{
+.tabs{
 color: #fff;
 background-color: rgb(74, 96, 177);
 position: fixed;
 left: 0;
+/*bottom: 10vh;*/
 bottom: 0;
 width: 100%;
 z-index: 1000;
