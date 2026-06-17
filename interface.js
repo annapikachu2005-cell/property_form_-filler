@@ -106,6 +106,7 @@ selectDescription.addEventListener("click", function(){
         bottom[i].style.display = "none";
         //images[i].style.width = "80%";
         images[i].style.width = "70%";
+        images[i].style.height = "130%";
         options[i].style.display = "flex";
         options[i].style.justifyContent = "space-between";
         options[i].style.flexDirection = "column"

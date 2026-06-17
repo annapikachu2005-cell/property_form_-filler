@@ -108,20 +108,24 @@ button{
 }
 }
 footer{
-background-color: rgb(74, 96, 177);
 width:100%;
 display: flex;
 flex-direction:column;
 position: fixed;
   bottom: 0;
   left: 0;
+  background-color: transparent;
   /*height: 12vh;*/
+}
+
+nav{
+    background-color: rgb(74, 96, 177);
 }
 
 button{
     background-color: inherit;
     color: #fff;
-    height: 10vh;
+    height: 6.5vh;
     margin-left: 5%;
     width: 9%;
   border: 2px dotted #bababa;
@@ -180,8 +184,11 @@ background-color: rgb(74, 96, 177);
 /*bottom: 0;*/
 /*z-index: 1000;*/
 padding: 1.5vh 0;
-border:solid #80aaffee 10px;
+border:solid #80aaffee 2px;
+border-radius: 20px 20px 0 0;
 width:50%;
+display: flex;
+justify-content: center;
 }
 
 #menu{
@@ -195,7 +202,7 @@ main{
       display: grid;
   grid-template-columns: 40rem;
   height: 75vh;
-  width:20%;
+  width:60%;
   /*display: flex;*/
   /*align-items: center;*/
   /*justify-content: center;*/
