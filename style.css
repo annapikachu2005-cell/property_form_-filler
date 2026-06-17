@@ -101,9 +101,9 @@ margin-left:0;
 
 button{
 
-    height: 3vh;
+    height: 1.8vh;
     margin-left: 2.5vh;
-    width: 3.38vh;
+    width: 1.6vw;
   
 }
 }
@@ -115,7 +115,7 @@ flex-direction:column;
 position: fixed;
   bottom: 0;
   left: 0;
-  height: 12vh;
+  /*height: 12vh;*/
 }
 
 button{
@@ -176,13 +176,12 @@ header{
 .tabs{
 color: #fff;
 background-color: rgb(74, 96, 177);
-position: fixed;
-left: 0;
+
 /*bottom: 0;*/
-z-index: 1000;
+/*z-index: 1000;*/
 padding: 1.5vh 0;
 border:solid #80aaffee 10px;
-width:25%;
+width:50%;
 }
 
 #menu{
