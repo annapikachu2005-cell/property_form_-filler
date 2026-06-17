@@ -17,22 +17,20 @@ let log = console.log;
 let resetSelection = document.getElementById("reset-selection");
 let groupDescription = document.getElementById("group-description");
 let selectDescription = document.getElementById("select-description");
-
 let footer = document.querySelector("footer");
 let tabs = document.getElementsByClassName("tabs");
 let main = document.querySelector("main");
 let header = document.querySelector("header");
-
 let displaySettings = document.getElementById("display-settings"); 
-
 let bottom = document.getElementsByClassName("bottom");
 let options = document.getElementsByClassName("options");
- let elements = document.getElementsByClassName("lables");
- let images = document.querySelectorAll("img");
+let elements = document.getElementsByClassName("lables");
+let images = document.querySelectorAll("img");
+let menuNavigaton = document.getElementById("menu-navigaton");
 
- let settingsOn = false;
- log(images);
-footer.style.display = "none";
+let settingsOn = false;
+log(images);
+menuNavigaton.style.display = "none";
 header.style.display = "none"; 
 
 let newValues = ["","list colums", "card icons", "cropping", "gallery screen", "two panels"];
@@ -127,7 +125,7 @@ selectDescription.addEventListener("click", function(){
 }
 tabs[0].addEventListener("click", function(){
     log("hello");
-    footer.style.display = "block";
+     menuNavigaton.style.display = "block";
     /*tabs.style.bottom = "7%";*/
     /*bottom.style.margin.left = "2vh";*/
     tabs[0].style.bottom = "10vh";
@@ -137,7 +135,7 @@ tabs[0].addEventListener("click", function(){
 
 tabs[1].addEventListener("click", function(){
     log("hello");
-    footer.style.display = "block";
+     menuNavigaton.style.display = "block";
     //tabs.style.bottom = "7%";
     /*bottom.style.margin.left = "2vh";*/
     tabs[0].style.bottom = "10vh";
