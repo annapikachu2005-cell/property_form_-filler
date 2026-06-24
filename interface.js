@@ -11,6 +11,8 @@
 Кнопки с названием папок имеют три разных состояния в зависимости от выбранного режима просмотра.
 */
 
+//const { createElement } = require("react");
+
 
 
 let log = console.log;
@@ -155,8 +157,12 @@ displaySettings.addEventListener("click", function(){
     log("hello");
     main.style=""
 
-     main.style.gridTemplateColumns = "0.5fr 0.5fr"
+     main.style.gridTemplateColumns = "0.25fr 0.25fr"
      main.style.width="90%"
+     //main.style.borderRight = "solid rgba(49, 87, 255, 1) 3px"
+     let line=document.createElement("div");
+     line.style.backgroundColor=" rgba(169, 185, 255, 1) "
+     main.append(line);
     
 });
 
