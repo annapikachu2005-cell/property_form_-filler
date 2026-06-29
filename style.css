@@ -3,7 +3,6 @@ body{
     display: flex;
     /*align-items: center;*/
     justify-content: center;
-
 }
 
 .display-list{
@@ -14,7 +13,6 @@ body{
 }
 
 main div{
-    /*background-color: crimson;*/
     padding: 1wv 1vh;
     margin-bottom: 2vh;
     width: 100%;
@@ -22,7 +20,7 @@ main div{
 
 img{
     height: auto;
-    width: 130%;
+    width: 90%;
 }
 div span{
     color: rgb(59, 196, 31); 
@@ -97,15 +95,10 @@ margin-left:0;
   left: 0;
   display:flex;
   align-items:flex-end;
+  font-size: 80%;
+  height: 30%;
 }
 
-button{
-
-    height: 1.8vh;
-    margin-left: 2.5vh;
-    width: 1.6vw;
-  
-}
 }
 footer{
 width:100%;
@@ -146,6 +139,10 @@ button{
   /*padding-bottom: 3px;*/
 }
 
+button:hover{
+    background-color: #788cff;
+}
+
 .span{
 margin-right: 7%;
 }
@@ -171,6 +168,7 @@ header{
     color: rgb(122, 122, 122);
     margin-right: 10vh;
     margin-top: 10vh;
+    font-size: 80%;
 }
 
 .lables{

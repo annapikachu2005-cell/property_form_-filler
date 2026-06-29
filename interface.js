@@ -1,14 +1,7 @@
-
-
- /* 
+/* 
 Кнопка список /колонки должна иметь две функции. В зависимости от отображаемого на экране режима соответствующее слово должно выделяться ярким белым цветом.
 Вариант с двумя панелями должен иметь яркую черту посередине как показано на рисунке.
-Дополнительные информация в списке должна постоянно отображаться при активации варианта просмотра список.
 Информация в карточках должна быть аккуратно организована и корректно отображаться независимо от размера экрана.
-Необходимо доделать крупные кнопки с названием папок.
-Кнопки с названием папок должны иметь разные цвета в зависимости от их активности или неактивности.
-Необходимо как можно ближе имитировать вид кнопок с названием папок.
-Кнопки с названием папок имеют три разных состояния в зависимости от выбранного режима просмотра.
 */
 
 //const { createElement } = require("react");
@@ -19,8 +12,6 @@ let groupDescription = document.getElementById("group-description");
 let selectDescription = document.getElementById("select-description");
 let displaySettings = document.getElementById("display-settings"); 
 let changeSrceDest = document.getElementById("changeSrceDest"); 
-
-//log(changeSrceDest);
 let footer = document.querySelector("footer");
 let tabs = document.getElementsByClassName("tabs");
 let main = document.querySelector("main");
@@ -30,7 +21,8 @@ let options = document.getElementsByClassName("options");
 let elements = document.getElementsByClassName("lables");
 let images = document.querySelectorAll("img");
 let menuNavigaton = document.getElementById("menu-navigaton");
-
+//let buttons = footer.querySelectorAll("button"); 
+let buttons = document.querySelectorAll("button"); 
 let settingsOn = false;
 menuNavigaton.style.display = "none";
 header.style.height = "0"; 
@@ -39,18 +31,18 @@ let newValues = ["","list colums", "card icons", "cropping", "gallery screen", "
 let oldValues = ["reset selection","group description", "select description", "transfer media", "change srce/ dest", "display settings"];
 const toSmall = window.matchMedia("max-width: 480px");
 //console.log(window.innerWidth);
-
+settingsOn = false;
 displaySettings.addEventListener("click", function(){
-    let buttons = footer.querySelectorAll("button"); 
     //log(buttons[0]);
-    buttons[0].innerHTML = "<img src='arrow.png'>"
-    for (let i = 1; i <= newValues.length-1; i++) {
-        //log(buttons[i].textContent);
+    buttons[0].innerHTML = "<img src='arrow_icon.png'>"
+    for (let i = 1; i <= newValues.length; i++) {
+        log(buttons[i].textContent);
         buttons[i].textContent = newValues[i];
     }
-    
+    settingsOn = true;
 });
-settingsOn = true;
+//settingsOn = true;
+
 if (settingsOn) {
     
 log("in the event");
@@ -62,11 +54,12 @@ resetSelection.addEventListener("click", function(){
         buttons[i].textContent = oldValues[i];
     }
 });
-settingsOn = false;
+//settingsOn = false;
 
 groupDescription.addEventListener("click", function(){
     main.style = "";
-        for (let i = 0; i <= options.length; i++) {        
+        for (let i = 0; i <= options.length; i++) {  
+            log(bottom[i]);      
        //bottom[i].style.display = "block";
         log(images[i]);
         images[i].style.width="130%";
