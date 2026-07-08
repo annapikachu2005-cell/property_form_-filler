@@ -19,9 +19,9 @@ let header = document.querySelector("header");
 let bottom = document.getElementsByClassName("bottom");
 let options = document.getElementsByClassName("options");
 let elements = document.getElementsByClassName("lables");
-
 let menuNavigaton = document.getElementById("menu-navigaton");
 let buttons = document.querySelectorAll("button"); 
+let images = document.querySelectorAll("img");
 //let buttons = document.querySelectorAll("button"); 
 let settingsOn = false;
 menuNavigaton.style.display = "none";
@@ -30,7 +30,6 @@ log(buttons);
 log(buttons[0].textContent);
 let newValues = ["","list colums", "card icons", "cropping", "gallery screen", "two panels"];
 let oldValues = ["reset selection","group description", "select description", "transfer media", "change srce/ dest", "display settings"];
-
 
 displaySettings.addEventListener("click", function(){
     let images = document.querySelectorAll("img");
@@ -42,16 +41,37 @@ displaySettings.addEventListener("click", function(){
     }
     })
 
-for (let i = 0; i < buttons; i++) {
+//buttons[0].addEventListener("click", function(){alert("OK!!")})
+for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", function(){
         if (buttons[i].textContent.trim() === "list colums"){
             console.log("list");
         };
-        if (buttons[i].textContent.trim() === "select description"){
-            console.log("select description");
+        if (buttons[i].textContent.trim() === "card icons"){
+            console.log("card icons");
+                for (let j = 0; j < options.length; j++) {
+        bottom[j].style.display = "none";
+        images[j].style.height = "130%";
+        options[j].style.display = "flex";
+        options[j].style.justifyContent = "space-between";
+        options[j].style.flexDirection = "column"
+    
+    }
+    main.style.gridTemplateColumns = "0.5fr 0.5fr 0.5fr 0.5fr";
+    main.style.width = "60%"
         };
-    });
-}
+        if (buttons[i].textContent.trim() === "cropping"){
+            console.log("cropping");
+        };
+        if (buttons[i].textContent.trim() === "gallery screen"){
+            console.log("gallery screen");
+        };
+        if (buttons[i].textContent.trim() === "two panels"){
+            console.log("two panels");
+        };
+    }
+    )};
+
 
 tabs[0].addEventListener("click", function(){
     console.log("hello");
