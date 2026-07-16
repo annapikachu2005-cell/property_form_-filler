@@ -1,7 +1,6 @@
 body{
     height: 100%;
     display: flex;
-    /*align-items: center;*/
     justify-content: center;
 }
 
@@ -57,36 +56,12 @@ div a{
 @media (max-width: 600px) {
     .card_pannel{
     background-color: aquamarine;
-     /*width: 200%;*/
      }
 
 .card_pannel div  {
     display:grid;
     grid-template-columns:4rem 8rem;
-    
-
 }
-
-/*.card_pannel div  {
-   margin-left: -105vw;
-   display: flex;
-   flex-flow: column;
-   align-items: center;
-}*/
-
-/*footer {
-display: grid;
-grid-template-columns: repeat(6, 0.15fr);
-grid-template-rows: 0.15fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-}*/
-/*button{
-    height: 6vh;
-    margin-left: 1.25vh;
-    width: 3.5vh;
-
-}*/
 
 .bottom{
 margin-left:0;
@@ -95,8 +70,6 @@ margin-left:0;
   left: 0;
   display:flex;
   align-items:flex-end;
-  /*font-size: 80%;
-  height: 30%;*/
 }
 
 }
@@ -159,7 +132,7 @@ margin-right: 7%;
 }
 
 header{
-    height: 0;
+    height: 20vh;
     background-color: rgb(62,63,65);
     border-bottom: 10px solid #a9d6fc;
 }
@@ -168,7 +141,7 @@ header{
     color: rgb(122, 122, 122);
     margin-right: 10vh;
     margin-top: 10vh;
-    font-size: 80%;
+    font-size: 90%;
 }
 
 .lables{
@@ -179,16 +152,12 @@ header{
 
 .options {
   display: grid;
-  grid-template-columns: 3rem 15rem;
-  /*grid-template-rows: 4rem;*/
+  grid-template-columns: 4rem 15rem;
 }
 
 .tabs{
 color: #fff;
 background-color: rgb(74, 96, 177);
-
-/*bottom: 0;*/
-/*z-index: 1000;*/
 padding: 1.5vh 0;
 border:solid #80aaffee 2px;
 border-radius: 20px 20px 0 0;
@@ -207,9 +176,4 @@ justify-content: space-between;
 main{
       display: grid;
   grid-template-columns: 40rem;
-  height: 75vh;
-  width:20%;
-  /*display: flex;*/
-  /*align-items: center;*/
-  /*justify-content: center;*/
 }
