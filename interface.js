@@ -16,7 +16,7 @@ let buttons = document.querySelectorAll("button");
 let images = document.querySelectorAll("img"); 
 menuNavigaton.style.display = "none";
 header.hidden = true; 
-
+let pannelsOn = false;
 let newValues = ["","list colums", "card icons", "cropping", "gallery screen", "two panels"];
 let oldValues = ["reset selection","group description", "select description", "transfer media", "change srce/ dest", "display settings"];
 
@@ -38,7 +38,9 @@ for (let i = 0; i < buttons.length; i++) {
             options[n].style.display = "grid";
              options[n].style.gridTemplateColumns = "4rem 15rem";
             }
+            //main.style.borderRight = "0px";
             main.style.gridTemplateColumns = "0.5fr" ;
+            
         };
         if (buttons[i].textContent.trim() === "card icons"){
             console.log("card icons");
@@ -48,9 +50,11 @@ for (let i = 0; i < buttons.length; i++) {
                     options[j].style.display = "flex";
                     options[j].style.justifyContent = "space-between";
                     options[j].style.flexDirection = "column";        
+                    
                 }
+    //main.style.borderRight = "0px";
     main.style.gridTemplateColumns = "0.5fr 0.5fr 0.5fr 0.5fr";
-    main.style.width = "60%"
+    main.style.width = "60%";
         };
         if (buttons[i].textContent.trim() === "cropping"){
             console.log("cropping");
@@ -61,8 +65,14 @@ for (let i = 0; i < buttons.length; i++) {
         };
         if (buttons[i].textContent.trim() === "two panels"){
             console.log("two panels");
+            pannelsOn = !pannelsOn
+            if (pannelsOn){
            main.style.gridTemplateColumns = "0.5fr 0.5fr";
-           main.style.borderRight = "4px solid rgb(64, 64, 255)"
+           main.style.borderRight = "4px solid rgb(64, 64, 255)";
+        }else{
+            main.style.borderRight = "0px";
+        }
+           
         };
     }
     )};
