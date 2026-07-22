@@ -153,6 +153,7 @@ header{
 .options {
   display: grid;
   grid-template-columns: 4rem 15rem;
+  grid-template-rows: 3rem;
 }
 
 .tabs{
