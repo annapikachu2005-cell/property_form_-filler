@@ -38,7 +38,6 @@ for (let i = 0; i < buttons.length; i++) {
             options[n].style.display = "grid";
              options[n].style.gridTemplateColumns = "4rem 15rem";
             }
-            //main.style.borderRight = "0px";
             main.style.gridTemplateColumns = "0.5fr" ;
             
         };
@@ -71,6 +70,7 @@ for (let i = 0; i < buttons.length; i++) {
            main.style.borderRight = "4px solid rgb(64, 64, 255)";
         }else{
             main.style.borderRight = "0px";
+            //main.style.gridTemplateColumns = "0.5fr";
         }
            
         };
