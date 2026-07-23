@@ -37,8 +37,9 @@ for (let i = 0; i < buttons.length; i++) {
             images[n].style.height = "80%";
             options[n].style.display = "grid";
              options[n].style.gridTemplateColumns = "4rem 15rem";
+             bottom[j].hidden = true;
             }
-            main.style.gridTemplateColumns = "0.5fr" ;
+            main.style.gridTemplateColumns = "0.5fr 0.5fr" ;
             
         };
         if (buttons[i].textContent.trim() === "card icons"){
