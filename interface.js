@@ -1,13 +1,17 @@
+
+//do buttons one by one
 let log = console.log;
 let resetSelection = document.getElementById("reset-selection");
 let groupDescription = document.getElementById("group-description");
 let selectDescription = document.getElementById("select-description");
 let displaySettings = document.getElementById("display-settings"); 
 let changeSrceDest = document.getElementById("changeSrceDest"); 
+
 let footer = document.querySelector("footer");
 let tabs = document.getElementsByClassName("tabs");
 let main = document.querySelector("main");
 let header = document.querySelector("header");
+
 let bottom = document.getElementsByClassName("bottom");
 let options = document.getElementsByClassName("options");
 let elements = document.getElementsByClassName("lables");
@@ -19,9 +23,8 @@ header.hidden = true;
 let pannelsOn = false;
 let newValues = ["","list colums", "card icons", "cropping", "gallery screen", "two panels"];
 let oldValues = ["reset selection","group description", "select description", "transfer media", "change srce/ dest", "display settings"];
-
+let cardInfo = false;
 displaySettings.addEventListener("click", function(){
-    let images = document.querySelectorAll("img");
     for (let i = 0; i <= newValues.length - 1; i++) {
         buttons[i].textContent = newValues[i];
     }
@@ -34,27 +37,35 @@ for (let i = 0; i < buttons.length; i++) {
             main.style.display = "grid";
              for (let n = 0; n < options.length; n++) {
              bottom[n].hidden = false;
-            images[n].style.height = "80%";
             options[n].style.display = "grid";
-             options[n].style.gridTemplateColumns = "4rem 15rem";
-             bottom[j].hidden = true;
+             options[n].style.gridTemplateColumns = "3.6rem 15rem";
             }
-            main.style.gridTemplateColumns = "0.5fr 0.5fr" ;
+            main.style.gridTemplateColumns = "0.45fr 0.45fr" ;
             
         };
         if (buttons[i].textContent.trim() === "card icons"){
+             cardInfo = !cardInfo; 
             console.log("card icons");
-                for (let j = 0; j < options.length; j++) {             
+            for (let j = 0; j < options.length; j++) {             
                     bottom[j].hidden = true;
                     images[j].style.height = "130%";
                     options[j].style.display = "flex";
                     options[j].style.justifyContent = "space-between";
-                    options[j].style.flexDirection = "column";        
-                    
+                    options[j].style.flexDirection = "column";                         
                 }
-    //main.style.borderRight = "0px";
-    main.style.gridTemplateColumns = "0.5fr 0.5fr 0.5fr 0.5fr";
-    main.style.width = "60%";
+            if(cardInfo){
+                for (let j = 0; j < options.length; j++) {             
+                    bottom[j].hidden = false;
+                    
+                   
+                    
+                }}else{
+                for (let j = 0; j < options.length; j++) {             
+                    bottom[j].hidden = true;                      
+                }}
+
+    main.style.gridTemplateColumns = "0.42fr 0.42fr 0.42fr 0.42fr";
+
         };
         if (buttons[i].textContent.trim() === "cropping"){
             console.log("cropping");
@@ -65,15 +76,9 @@ for (let i = 0; i < buttons.length; i++) {
         };
         if (buttons[i].textContent.trim() === "two panels"){
             console.log("two panels");
-            pannelsOn = !pannelsOn
-            if (pannelsOn){
-           main.style.gridTemplateColumns = "0.5fr 0.5fr";
-           main.style.borderRight = "4px solid rgb(64, 64, 255)";
-        }else{
-            main.style.borderRight = "0px";
-            //main.style.gridTemplateColumns = "0.5fr";
-        }
-           
+           main.style.gridTemplateColumns = "0.45fr 0.45fr";
+           main.style.borderRight = "6px solid rgb(73, 73, 255)";
+ 
         };
     }
     )};
