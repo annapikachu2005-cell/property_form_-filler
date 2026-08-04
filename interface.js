@@ -29,14 +29,13 @@ for (let i = 0; i < buttons.length; i++) {
                 for (let i = 0; i <= newValues.length - 1; i++) {
         buttons[i].textContent = oldValues[i];
     }
-        };
-        if (buttons[i].textContent.trim() === "list colums"){    
+        } else if (buttons[i].textContent.trim() === "list colums"){    
             twoColumns = !twoColumns;     
             main.style.display = "grid";
              for (let n = 0; n < main.children.length; n++) {
              bottom[n].hidden = true;
              main.children[n].style.display = "grid";
-             main.children.style.gridTemplateColumns = "3.6rem 15rem";
+             main.children[n].style.gridTemplateColumns = "3.6rem 15rem";
             main.children[n].children[0].style = "90%";
             }
             if(twoColumns){
