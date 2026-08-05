@@ -1,7 +1,9 @@
 body{
     height: 100%;
     display: flex;
+    /*align-items: center;*/
     justify-content: center;
+
 }
 
 .display-list{
@@ -12,6 +14,7 @@ body{
 }
 
 main div{
+    /*background-color: crimson;*/
     padding: 1wv 1vh;
     margin-bottom: 2vh;
     width: 100%;
@@ -19,7 +22,8 @@ main div{
 
 img{
     height: auto;
-    width: 90%;
+    width: 130%;
+     margin-bottom: auto;
 }
 div span{
     color: rgb(59, 196, 31); 
@@ -56,12 +60,36 @@ div a{
 @media (max-width: 600px) {
     .card_pannel{
     background-color: aquamarine;
+     /*width: 200%;*/
      }
 
 .card_pannel div  {
     display:grid;
     grid-template-columns:4rem 8rem;
+    
+
 }
+
+/*.card_pannel div  {
+   margin-left: -105vw;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+}*/
+
+/*footer {
+display: grid;
+grid-template-columns: repeat(6, 0.15fr);
+grid-template-rows: 0.15fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}*/
+/*button{
+    height: 6vh;
+    margin-left: 1.25vh;
+    width: 3.5vh;
+
+}*/
 
 .bottom{
 margin-left:0;
@@ -72,6 +100,13 @@ margin-left:0;
   align-items:flex-end;
 }
 
+button{
+
+    height: 1.8vh;
+    margin-left: 2.5vh;
+    width: 1.6vw;
+  
+}
 }
 footer{
 width:100%;
@@ -91,9 +126,9 @@ nav{
 button{
     background-color: inherit;
     color: #fff;
-    height: 8vh;
-    margin-left: 8%;
-    width: 10vh;
+    height: 6.5vh;
+    margin-left: 5%;
+    width: 9%;
   border: 2px dotted #bababa;
   border-radius: 5px;
   float: left;
@@ -105,14 +140,11 @@ button{
     left:0;
     margin-bottom: 10px;
     margin-top: 10px;
+    
       display: flex;
   flex-direction: column;
   justify-content: flex-end;
   /*padding-bottom: 3px;*/
-}
-
-button:hover{
-    background-color: #788cff;
 }
 
 .span{
@@ -131,7 +163,7 @@ margin-right: 7%;
 }
 
 header{
-    height: 20vh;
+    height: 50vh;
     background-color: rgb(62,63,65);
     border-bottom: 10px solid #a9d6fc;
 }
@@ -139,8 +171,7 @@ header{
 .fileName{
     color: rgb(122, 122, 122);
     margin-right: 10vh;
-    margin-top: 10vh;
-    font-size: 90%;
+    margin-top: 30vh;
 }
 
 .lables{
@@ -151,13 +182,19 @@ header{
 
 .options {
   display: grid;
-  grid-template-columns: 4rem 15rem;
-  grid-template-rows: 3rem;
+  grid-template-columns: 3rem 15rem;
+  /*grid-template-rows: 3rem 1rem;
+  display:flex;
+  justify-content: space-around;
+  grid-template-rows: 4rem;*/
 }
 
 .tabs{
 color: #fff;
 background-color: rgb(74, 96, 177);
+
+/*bottom: 0;*/
+/*z-index: 1000;*/
 padding: 1.5vh 0;
 border:solid #80aaffee 2px;
 border-radius: 20px 20px 0 0;
@@ -176,4 +213,9 @@ justify-content: space-between;
 main{
       display: grid;
   grid-template-columns: 40rem;
+  height: 75vh;
+  /*width:20%;*/
+  /*display: flex;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
 }

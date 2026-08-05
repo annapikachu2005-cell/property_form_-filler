@@ -1,4 +1,3 @@
-
 let log = console.log;
 
 let displaySettings = document.getElementById("display-settings"); 
@@ -31,12 +30,10 @@ for (let i = 0; i < buttons.length; i++) {
     }
         } else if (buttons[i].textContent.trim() === "list colums"){    
             twoColumns = !twoColumns;     
-            main.style.display = "grid";
              for (let n = 0; n < main.children.length; n++) {
              bottom[n].hidden = true;
-             main.children[n].style.display = "grid";
-             main.children[n].style.gridTemplateColumns = "3.6rem 15rem";
-            main.children[n].children[0].style = "90%";
+
+            main.children[n].style=""
             }
             if(twoColumns){
             main.style.gridTemplateColumns = "0.35fr 0.35fr" ;
@@ -44,12 +41,11 @@ for (let i = 0; i < buttons.length; i++) {
         };
         if (buttons[i].textContent.trim() === "card icons"){
              cardInfo = !cardInfo; 
-            for (let j = 0; j < main.childrenh; j++) {             
+            for (let j = 0; j < main.children.length; j++) {             
                     bottom[j].hidden = true;
-                    main.children[j].style.display = "flex";
-                    main.children[j].style.justifyContent = "space-between";
-                    main.children[j].style.flexDirection = "column";      
-                    main.children[j].children[0].style = "130%";                   
+                    log(main.children[j].children[0])
+                    main.children[j].children[0].style.width = "350%";   
+                            
                 }
             if(cardInfo){
                 for (let j = 0; j <main.children .length; j++) {             
@@ -68,7 +64,7 @@ for (let i = 0; i < buttons.length; i++) {
             console.log("cropping");
         };
         if (buttons[i].textContent.trim() === "gallery screen"){
-            console.log("gallery screen");
+    
             header.hidden = false; 
         };
         if (buttons[i].textContent.trim() === "two panels"){
