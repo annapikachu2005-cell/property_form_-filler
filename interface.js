@@ -44,7 +44,7 @@ for (let i = 0; i < buttons.length; i++) {
             for (let j = 0; j < main.children.length; j++) {             
                     bottom[j].hidden = true;
                     log(main.children[j].children[0])
-                    main.children[j].children[0].style.width = "350%";   
+                    main.children[j].children[0].style.width = "450%";   
                             
                 }
             if(cardInfo){
