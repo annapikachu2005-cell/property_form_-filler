@@ -126,7 +126,7 @@ nav{
 button{
     background-color: inherit;
     color: #fff;
-    height: 6.5vh;
+    height: 8vh;
     margin-left: 5%;
     width: 9%;
   border: 2px dotted #bababa;
@@ -183,6 +183,7 @@ header{
 .options {
   display: grid;
   grid-template-columns: 3rem 15rem;
+  width:80%;
   /*grid-template-rows: 3rem 1rem;
   display:flex;
   justify-content: space-around;
