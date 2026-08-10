@@ -3,6 +3,7 @@ body{
     display: flex;
     /*align-items: center;*/
     justify-content: center;
+    width: 100%;
 
 }
 
@@ -47,14 +48,14 @@ div a{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   display:flex;
   justify-content: space-between;
-  align-items:flex-end;
+  align-items:center;
   gap: 1px; 
   margin-left:10vh;
  
 }
 
 .card_pannel div img {
-    width: 270%;
+    width: 400%;
 }
 
 @media (max-width: 600px) {

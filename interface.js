@@ -40,13 +40,14 @@ for (let i = 0; i < buttons.length; i++) {
         }else{main.style.gridTemplateColumns = "0.35fr" ;}
         };
         if (buttons[i].textContent.trim() === "card icons"){
+            main.classList = "card_pannel"
              cardInfo = !cardInfo; 
-            for (let j = 0; j < main.children.length; j++) {             
+            /*for (let j = 0; j < main.children.length; j++) {             
                     bottom[j].hidden = true;
                     log(main.children[j].children[0])
                     main.children[j].children[0].style.width = "450%";   
                             
-                }
+                }*/
             if(cardInfo){
                 for (let j = 0; j <main.children .length; j++) {             
                     bottom[j].hidden = true;                  
@@ -57,7 +58,7 @@ for (let i = 0; i < buttons.length; i++) {
             main.style.gridTemplateColumns = "0.35fr 0.35fr" ;
             }
 
-    main.style.gridTemplateColumns = "0.42fr 0.42fr 0.42fr 0.42fr";
+    //main.style.gridTemplateColumns = "0.42fr 0.42fr 0.42fr 0.42fr";
 
         };
         if (buttons[i].textContent.trim() === "cropping"){
