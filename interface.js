@@ -28,12 +28,11 @@ for (let i = 0; i < buttons.length; i++) {
                 for (let i = 0; i <= newValues.length - 1; i++) {
         buttons[i].textContent = oldValues[i];
     }
-        } else if (buttons[i].textContent.trim() === "list colums"){    
+        } else if (buttons[i].textContent.trim() === "list colums"){   
+             main.classList = ""
             twoColumns = !twoColumns;     
              for (let n = 0; n < main.children.length; n++) {
              bottom[n].hidden = true;
-
-            main.children[n].style=""
             }
             if(twoColumns){
             main.style.gridTemplateColumns = "0.35fr 0.35fr" ;
@@ -42,12 +41,7 @@ for (let i = 0; i < buttons.length; i++) {
         if (buttons[i].textContent.trim() === "card icons"){
             main.classList = "card_pannel"
              cardInfo = !cardInfo; 
-            /*for (let j = 0; j < main.children.length; j++) {             
-                    bottom[j].hidden = true;
-                    log(main.children[j].children[0])
-                    main.children[j].children[0].style.width = "450%";   
-                            
-                }*/
+        
             if(cardInfo){
                 for (let j = 0; j <main.children .length; j++) {             
                     bottom[j].hidden = true;                  
@@ -55,23 +49,16 @@ for (let i = 0; i < buttons.length; i++) {
                 for (let j = 0; j < main.children.length; j++) {             
                     bottom[j].hidden = false;                      
                 }
-            main.style.gridTemplateColumns = "0.35fr 0.35fr" ;
             }
-
-    //main.style.gridTemplateColumns = "0.42fr 0.42fr 0.42fr 0.42fr";
-
         };
         if (buttons[i].textContent.trim() === "cropping"){
             console.log("cropping");
         };
         if (buttons[i].textContent.trim() === "gallery screen"){
-    
             header.hidden = false; 
         };
         if (buttons[i].textContent.trim() === "two panels"){
-           main.style.gridTemplateColumns = "0.45fr 0.45fr";
-           main.style.borderRight = "6px solid rgb(73, 73, 255)";
- 
+ main.classList = "double-pannel";
         };
     }
     )};
