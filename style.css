@@ -22,7 +22,7 @@ main div{
 }
 
 img{
-    height: auto;
+    /*height: 100%;*/
     width: 130%;
      margin-bottom: auto;
 }
@@ -56,6 +56,7 @@ div a{
 
 .card_pannel div img {
     width: 400%;
+    height: 90%;
 }
 
 @media (max-width: 600px) {
@@ -153,6 +154,10 @@ button{
   /*padding-bottom: 3px;*/
 }
 
+button:hover{
+    background-color: #a9bcfc;
+}
+
 .span{
 margin-right: 7%;
 }
@@ -181,12 +186,15 @@ header{
 }
 
 .lables{
-    position: relative;
-    height:80%;
-    margin-left: 2.5vh;
+    position: absolute;
+    /*height:80%;*
+    margin-left: 2.5vh;*/
+    bottom:0;
+    left:0;
 }
 
 .options {
+ position: relative;
   display: grid;
   grid-template-columns: 3rem 15rem;
   width:80%;
