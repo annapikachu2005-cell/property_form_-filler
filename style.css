@@ -22,8 +22,8 @@ main div{
 }
 
 img{
-    /*height: 100%;*/
-    width: 130%;
+    height: auto;
+   width:100%;
      margin-bottom: auto;
 }
 div span{
@@ -104,7 +104,8 @@ grid-row-gap: 0px;
 .bottom{
 margin-left:0;
   position: absolute;
-  bottom: 0;
+  bottom: 10vh;
+   /*top:10vh;*/
   left: 0;
   display:flex;
   align-items:flex-end;
@@ -186,14 +187,15 @@ header{
     color: rgb(122, 122, 122);
     /*margin-right: 10vh;
     margin-top: 30vh;*/
+    position:absolute;
 }
 
 .lables{
-    position: absolute;
+    position: relative;
     /*height:80%;*
     margin-left: 2.5vh;
     bottom:0;*/
-    top:0;
+
     left:0;
 }
 
@@ -202,6 +204,7 @@ header{
   display: grid;
   grid-template-columns: 3rem 15rem;
   width:80%;
+  position:relative;
   /*grid-template-rows: 3rem 1rem;
   display:flex;
   justify-content: space-around;
