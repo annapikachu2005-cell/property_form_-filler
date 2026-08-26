@@ -184,15 +184,16 @@ header{
 
 .fileName{
     color: rgb(122, 122, 122);
-    margin-right: 10vh;
-    margin-top: 30vh;
+    /*margin-right: 10vh;
+    margin-top: 30vh;*/
 }
 
 .lables{
     position: absolute;
     /*height:80%;*
-    margin-left: 2.5vh;*/
-    bottom:0;
+    margin-left: 2.5vh;
+    bottom:0;*/
+    top:0;
     left:0;
 }
 
