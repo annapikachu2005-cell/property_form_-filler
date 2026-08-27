@@ -131,12 +131,13 @@ position: fixed;
 
 nav{
     background-color: rgb(74, 96, 177);
+    height: 12vh;
 }
 
 button{
     background-color: inherit;
     color: #fff;
-    height: 8vh;
+    height: 10vh;
     margin-left: 5%;
     width: 9%;
   border: 2px dotted #bababa;
@@ -202,7 +203,7 @@ header{
 
   display: grid;
   grid-template-columns: 3rem 15rem;
-  /*width:80%;*/
+  width:85%;
   position:relative;
   /*grid-template-rows: 3rem 1rem;
   display:flex;
