@@ -56,8 +56,7 @@ div a{
 }
 
 .card_pannel div img {
-    width: 400%;
-    height: 90%;
+
     position: absolute;
 }
 
@@ -69,8 +68,8 @@ div a{
 
 .card_pannel div  {
     
-    display:grid;
-    grid-template-columns:4rem 8rem;
+   /* display:grid;
+    grid-template-columns:4rem 8rem;*/
     display:flex;
   justify-content: space-between;
   align-items:center;
@@ -203,7 +202,7 @@ header{
 
   display: grid;
   grid-template-columns: 3rem 15rem;
-  width:80%;
+  /*width:80%;*/
   position:relative;
   /*grid-template-rows: 3rem 1rem;
   display:flex;
