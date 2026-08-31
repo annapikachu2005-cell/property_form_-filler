@@ -23,8 +23,8 @@ main div{
 
 img{
     height: auto;
-   width:100%;
-     margin-bottom: auto;
+   width:120%;
+     /*margin-bottom: auto;*/
 }
 div span{
     color: rgb(59, 196, 31); 
@@ -37,10 +37,12 @@ div a{
 
 .double-pannel {
   display: grid;
-  grid-template-columns: 0.1fr 0.3fr;
+  grid-template-columns: minmax(0.05fr, 0.1fr) 0.3fr;
   gap: 1px; 
   border-right: 6px solid rgb(64, 64, 255);
-  width:100%;
+  width:55vh;
+  margin-right: minmax(45vw, 100vw);
+  position: absolute;
 }
 
 .card_pannel{
@@ -52,6 +54,7 @@ div a{
   align-items:center;*/
   gap: 1px; 
   margin-left:10vh;
+
  
 }
 
@@ -74,8 +77,11 @@ div a{
   justify-content: space-between;
   align-items:center;
   position: relative;
+  flex-direction: column;
   
-    
+.options{
+    height: 10%;
+}
 
 }
 
@@ -131,15 +137,15 @@ position: fixed;
 
 nav{
     background-color: rgb(74, 96, 177);
-    height: 12vh;
+    height: 14vh;
 }
 
 button{
     background-color: inherit;
     color: #fff;
     height: 10vh;
-    margin-left: 5%;
-    width: 11%;
+    margin-left: 6%;
+    width: 9vw;
   border: 2px dotted #bababa;
   border-radius: 5px;
   float: left;
@@ -202,9 +208,11 @@ header{
 .options {
 
   display: grid;
-  grid-template-columns: 3rem 15rem;
+  grid-template-columns: 4rem 15rem;
   width:85%;
+  height: 10%;
   position:relative;
+
   /*grid-template-rows: 3rem 1rem;
   display:flex;
   justify-content: space-around;
@@ -228,14 +236,15 @@ justify-content: center;
 #menu{
     display: flex;
 flex-direction:row;
-width:100%;
+/*width:100%;*/
 justify-content: space-between;
 }
 
 main{
-      display: grid;
-  grid-template-columns: 40rem;
-  gap:0;
+display: grid;
+grid-template-rows: 1fr;
+  /*grid-template-columns: 40rem;
+  gap:0;*/
  /* height: 75vh;*/
   /*width:20%;*/
   /*display: flex;*/
