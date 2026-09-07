@@ -13,24 +13,23 @@ body{
     width: 80vw;
     align-items: center;
 }
-
-main div{
+li {
     /*background-color: crimson;*/
     padding: 1wv 1vh;
     margin-bottom: 2vh;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 img{
-    height: auto;
-   width:120%;
+    height: 5.5vh;
+   width:minmax(1vw,3.5vw);
      /*margin-bottom: auto;*/
 }
-div span{
+li span{
     color: rgb(59, 196, 31); 
 }
 
-div a{
+li a{
     color: rgb(53, 53, 227);
     text-decoration: none;
 }
@@ -58,7 +57,7 @@ div a{
  
 }
 
-.card_pannel div img {
+.card_pannel ul li img {
 
     position: absolute;
     width:100%;
@@ -66,7 +65,7 @@ div a{
 }
 
 
-.card_pannel div  {
+.card_pannel ul li  {
     
    /* display:grid;
     grid-template-columns:4rem 8rem;*/
@@ -75,10 +74,9 @@ div a{
   align-items:center;
   position: relative;
   flex-direction: column;
+  height: 15%;
   
-.options{
-    height: 10%;
-}
+
 
 }
 
@@ -111,6 +109,7 @@ margin-left:0;
   left: 0;
   display:flex;
   align-items:flex-end;
+  width:70%;
 }
 
 button{
@@ -120,7 +119,7 @@ button{
     width: 1.6vw;
   
 }
-}
+
 footer{
 width:100%;
 display: flex;
@@ -198,7 +197,7 @@ header{
     /*height:80%;*
     margin-left: 2.5vh;
     bottom:0;*/
-
+    width:minmax(25vw,50vw);
     left:0;
 }
 
@@ -207,13 +206,13 @@ header{
   display: grid;
   grid-template-columns: 4rem 15rem;
   width:85%;
-  height: 10%;
+  height: 4.5%;
   position:relative;
 
-  /*grid-template-rows: 3rem 1rem;
+  /*grid-template-rows: 3rem 1rem;*/
   display:flex;
   justify-content: space-around;
-  grid-template-rows: 4rem;*/
+  /*grid-template-rows: 4rem;*/
 }
 
 .tabs{
@@ -237,7 +236,7 @@ flex-direction:row;
 justify-content: space-between;
 }
 
-main{
+ul{
 /*display: grid;
 grid-template-rows: 1fr;*/
   /*grid-template-columns: 40rem;
@@ -247,4 +246,5 @@ grid-template-rows: 1fr;*/
   /*display: flex;*/
   /*align-items: center;*/
   /*justify-content: center;*/
+  width:minmax(20vw, 80vw);
 }
