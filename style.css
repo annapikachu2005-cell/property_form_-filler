@@ -160,7 +160,7 @@ header{
     display:grid;
     grid-column-start: span 2;
     grid-template-columns: 14rem;
-    grid-template-rows:  1.4rem 1.6rem 1.4rem;
+    grid-template-rows:  1.4rem 1.1rem 1.4rem;
     /*font-size: 50%;*/
     /*height: 30%;*/
     margin-left: 90%;
@@ -173,6 +173,8 @@ header{
   grid-template-columns: 4rem 15rem;*/
   width:85%;
   height: 7%;
+  min-height: 50px;
+  max-height: 17vh;
   position:relative;
   display:flex;
   font-size: minmax(40%, 100%);
