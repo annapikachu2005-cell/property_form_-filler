@@ -13,7 +13,7 @@ body{
 }
 
 img{
-    height: 4.5vh;
+    height: 90%;
    width:minmax(1vw,3.5vw);
    grid-column-start: 3;
      margin-right: 1.5vw;
@@ -47,7 +47,7 @@ li a{
 
 .card_pannel ul li img {
     position: absolute;
-    width:minmax(5vw, 10vw);
+    width:100%;
     height: auto;
     grid-column-end:1 ;
 }
@@ -55,7 +55,7 @@ li a{
 
 .card_pannel ul li  {
   height: 21%;
-  width: minmax(7vw, 25vw);
+  /*width: minmax(7vw, 25vw);*/
   display:grid;
   grid-template-columns: minmax(3rem, 12.5rem);
   grid-template-rows: 10rem 2rem;
@@ -63,13 +63,14 @@ li a{
 
 .bottom{
 margin-left:0;
-  position: absolute;
+  position: relative;
   bottom: 10vh;
   left: 0;
   display:flex;
   align-items:flex-end;
   width:120%;
-  grid-row-start:2;
+  margin-bottom: 10%;
+  /*grid-row-start:4;*/
 }
 
 button{
@@ -93,15 +94,18 @@ position: fixed;
 
 nav{
     background-color: rgb(74, 96, 177);
-    height: 14vh;
+    height: 5%;
+    margin-right:50%;
+    width: 200%;
+
 }
 
 button{
     background-color: inherit;
     color: #fff;
     height: 10vh;
-    margin-left: 6%;
-    width: 9vw;
+    margin-left: 1.5%;
+    width: 7%;
   border: 2px dotted #bababa;
   border-radius: 5px;
   float: left;
@@ -109,15 +113,15 @@ button{
   text-align: center;
   /*padding: 14px 16px;
   text-decoration: none;*/
-    font-size: 75%;
+    font-size: 70%;
     left:0;
     margin-bottom: 10px;
     margin-top: 10px;
     
-      display: flex;
+     /*display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  /*padding-bottom: 3px;*/
+padding-bottom: 3px;*/
 }
 
 button:hover{
@@ -151,24 +155,27 @@ header{
 }
 
 .lables{
-    position: relative;
-    left:0;
+    position: absolute;
+    /*left:0;*/
     display:grid;
     grid-column-start: span 2;
     grid-template-columns: 14rem;
-    grid-template-rows:  9.5rem 6rem;
-    height: 30%;
+    grid-template-rows:  1.4rem 1.6rem 1.4rem;
+    /*font-size: 50%;*/
+    /*height: 30%;*/
+    margin-left: 90%;
 }
 
 .options {
     padding: 1wv 1vh;
     margin-bottom: 2vh;
-  display: grid;
-  grid-template-columns: 4rem 15rem;
+  /*display: grid;
+  grid-template-columns: 4rem 15rem;*/
   width:85%;
-  height: 4.5%;
+  height: 7%;
   position:relative;
   display:flex;
+  font-size: minmax(40%, 100%);
 
 }
 
@@ -196,7 +203,7 @@ width:inherit;
 
 .card_pannel ul{
     display: grid;
-    grid-template-columns: minmax(10rem, 20rem) minmax(10rem, 20rem) minmax(10rem, 20rem) minmax(10rem, 20rem) ;
+    grid-template-columns: minmax(5rem, 20rem) minmax(5rem, 20rem) minmax(5rem, 20rem) minmax(5rem, 20rem) ;
 }
 
 main{
