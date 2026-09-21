@@ -173,7 +173,7 @@ header{
   grid-template-columns: 4rem 15rem;*/
   width:85%;
   height: 7%;
-  min-height: 50px;
+  min-height: 40px;
   max-height: 17vh;
   position:relative;
   display:flex;
