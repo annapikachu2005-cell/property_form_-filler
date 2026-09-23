@@ -50,6 +50,7 @@ li a{
     width:100%;
     height: auto;
     grid-column-end:1 ;
+    margin-top: 5%;
 }
 
 
@@ -160,7 +161,7 @@ header{
     display:grid;
     grid-column-start: span 2;
     grid-template-columns: 14rem;
-    grid-template-rows:  1.4rem 1.1rem 1.4rem;
+    grid-template-rows:  1.4rem 1rem;
     /*font-size: 50%;*/
     /*height: 30%;*/
     margin-left: 90%;
@@ -173,8 +174,8 @@ header{
   grid-template-columns: 4rem 15rem;*/
   width:85%;
   height: 7%;
-  min-height: 40px;
-  max-height: 17vh;
+  min-height: 60px;
+  max-height: 20vh;
   position:relative;
   display:flex;
   font-size: minmax(40%, 100%);
@@ -205,7 +206,8 @@ width:inherit;
 
 .card_pannel ul{
     display: grid;
-    grid-template-columns: minmax(5rem, 20rem) minmax(5rem, 20rem) minmax(5rem, 20rem) minmax(5rem, 20rem) ;
+    grid-template-columns: minmax(5rem, 20rem) minmax(5rem, 20rem) minmax(5rem, 20rem) minmax(5rem, 20rem);
+    grid-template-rows: minmax(10rem, 120rem) minmax(10rem, 80rem) minmax(10rem, 80rem) minmax(10rem, 80rem);
 }
 
 main{
