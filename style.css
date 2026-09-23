@@ -32,11 +32,12 @@ li a{
   grid-template-columns: minmax(0.05fr, 0.1fr);
   gap: 1px; 
   border-right: 6px solid rgb(64, 64, 255);
-  width:55vh;
-  margin-right: minmax(45vw, 100vw);
+  max-width: 70vh;
+  min-width: 30vh;
+  margin-right: 20%;
   position: absolute;
 }
-
+.double-pannel span{margin-left: 15%;}
 .card_pannel{
   display:flex;
   justify-content: space-between;
@@ -207,7 +208,7 @@ margin-left: -10%;
 
 .card_pannel ul{
     display: grid;
-    grid-template-columns: minmax(5rem, 15rem) minmax(5rem, 15rem) minmax(5rem, 15rem) minmax(5rem, 15rem);
+    grid-template-columns: minmax(6rem, 15rem) minmax(6rem, 15rem) minmax(6rem, 15rem) minmax(6rem, 15rem);
     /*grid-template-rows: minmax(10rem, 120rem) minmax(10rem, 80rem) minmax(10rem, 80rem) minmax(10rem, 80rem);*/
 }
 
