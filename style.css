@@ -59,7 +59,7 @@ li a{
   /*width: minmax(7vw, 25vw);*/
   display:grid;
   grid-template-columns: minmax(3rem, 12.5rem);
-  grid-template-rows: 10rem 2rem;
+  grid-template-rows: minmax(5rem,10rem) 2rem;
 }
 
 .bottom{
@@ -202,12 +202,13 @@ justify-content: space-between;
 ul{
  height: 75vh;
 width:inherit;
+margin-left: -20%;
 }
 
 .card_pannel ul{
     display: grid;
-    grid-template-columns: minmax(5rem, 20rem) minmax(5rem, 20rem) minmax(5rem, 20rem) minmax(5rem, 20rem);
-    grid-template-rows: minmax(10rem, 120rem) minmax(10rem, 80rem) minmax(10rem, 80rem) minmax(10rem, 80rem);
+    grid-template-columns: minmax(5rem, 15rem) minmax(5rem, 15rem) minmax(5rem, 15rem) minmax(5rem, 15rem);
+    /*grid-template-rows: minmax(10rem, 120rem) minmax(10rem, 80rem) minmax(10rem, 80rem) minmax(10rem, 80rem);*/
 }
 
 main{
