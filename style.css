@@ -14,9 +14,9 @@ body{
 
 img{
     height: 90%;
-   width:minmax(1vw,3.5vw);
+  /*width:minmax(1vw,3.5vw);
    grid-column-start: 3;
-     margin-right: 1.5vw;
+     margin-right: 1.5vw;*/
 }
 li span{
     color: rgb(59, 196, 31); 
@@ -153,37 +153,48 @@ header{
 
 .fileName{
     color: rgb(122, 122, 122);
-    position:absolute;
+    /*position:absolute;*/
 }
 
-.lables{
+/*.lables{
     position: absolute;
-    /*left:0;*/
+    left:0;
     display:grid;
     grid-column-start: span 2;
     grid-template-columns: 14rem;
     grid-template-rows:  1.4rem 1rem;
-    /*font-size: 50%;*/
-    /*height: 30%;*/
+    font-size: 50%;
+    height: 30%;
     margin-left: 90%;
+}*/
+
+.lables{
+    display:grid;
+    grid-template-rows: 2rem 2rem;
 }
 
-.options {
+
+/*.options {
     padding: 1wv 1vh;
     margin-bottom: 2vh;
-  /*display: grid;
-  grid-template-columns: 4rem 15rem;*/
+  display: grid;
+  grid-template-columns: 4rem 15rem;
   width:85%;
-  height: 7%;
-  min-height: 15%;
-  max-height: 7%;
-  /*height: 7%;*/
+  min-height: 50px;
+  max-height: 20vh;
+  min-height: 15vh;
+  max-height: 20vh;
+  height: 15vh;
   position:relative;
   display:flex;
   font-size: minmax(40%, 100%);
 
+}*/
+.options{
+    display: grid;
+    grid-template-columns: 5.5rem 20rem;
+    grid-auto-rows:4rem;
 }
-
 .tabs{
 color: #fff;
 background-color: rgb(74, 96, 177);
@@ -205,6 +216,7 @@ ul{
 /* min-height: 30vh;*/
 width:inherit;
 margin-left: -10%;
+max-height: 70vh;
 }
 
 .card_pannel ul{
