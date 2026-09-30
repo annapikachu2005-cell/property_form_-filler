@@ -13,7 +13,7 @@ body{
 }
 
 img{
-    height: 90%;
+    height: 80%;
   /*width:minmax(1vw,3.5vw);
    grid-column-start: 3;
      margin-right: 1.5vw;*/
@@ -170,7 +170,7 @@ header{
 
 .lables{
     display:grid;
-    grid-template-rows: 2rem 2rem;
+    grid-template-rows: 1.5rem 0.6rem 1.5rem;
 }
 
 
