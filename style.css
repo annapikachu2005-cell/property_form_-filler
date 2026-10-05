@@ -48,7 +48,8 @@ li a{
 
 .card_pannel ul li img {
     /*position: absolute;*/
-    width:120%;
+    width: 22vw;
+    min-width: 3vw;
     height: auto;
     grid-column-end:1 ;
     margin-top: 5%;
@@ -60,7 +61,7 @@ li a{
   /*width: minmax(7vw, 25vw);*/
   display:grid;
   grid-template-columns: minmax(3rem, 12.5rem);
-  grid-template-rows: minmax(5rem,10rem) 2rem;
+  grid-template-rows: minmax(4rem,10.5rem) 2rem;
 }
 
 .bottom{
