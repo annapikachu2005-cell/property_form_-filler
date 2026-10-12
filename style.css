@@ -39,16 +39,16 @@ li a{
 }
 .double-pannel span{margin-left: 15%;}
 .card_pannel{
-  display:flex;
+  /*display:flex;
   justify-content: space-between;
-  align-items:center;
+  align-items:center;*/
   gap: 1px; 
   margin-left:10vh;
 }
 
 .card_pannel ul li img {
     /*position: absolute;*/
-    width: 22vw;
+    width: 15vw;
     min-width: 3vw;
     height: auto;
     grid-column-end:1 ;
@@ -61,7 +61,7 @@ li a{
   /*width: minmax(7vw, 25vw);*/
   display:grid;
   grid-template-columns: minmax(3rem, 12.5rem);
-  grid-template-rows: minmax(4rem,10.5rem) 2rem;
+  grid-template-rows: minmax(1rem,20rem);
 }
 
 .bottom{
@@ -73,7 +73,7 @@ margin-left:0;
   align-items:flex-start;
   width:120%;
   margin-bottom: 10%;
-  /*grid-row-start:4;*/
+  grid-row-start:3;
 }
 
 button{
@@ -154,6 +154,8 @@ header{
 
 .fileName{
     color: rgb(122, 122, 122);
+    
+    grid-row-start:2;
     /*position:absolute;*/
 }
 
@@ -171,7 +173,7 @@ header{
 
 .lables{
     display:grid;
-    grid-template-rows: 1.5rem 0.6rem 1.5rem;
+    grid-template-rows: 1.5rem  1.5rem;
     /*grid-row-start: 2;*/
 }
 
@@ -223,8 +225,9 @@ max-height: 70vh;
 
 .card_pannel ul{
     display: grid;
-    grid-template-columns: minmax(6rem, 15rem) minmax(6rem, 15rem) minmax(6rem, 15rem) minmax(6rem, 15rem);
+    grid-auto-rows: minmax(3rem, 15rem);
     /*grid-template-rows: minmax(10rem, 120rem) minmax(10rem, 80rem) minmax(10rem, 80rem) minmax(10rem, 80rem);*/
+    grid-template-columns: minmax(5rem, 18rem) minmax(5rem, 18rem) minmax(5rem, 18rem) minmax(5rem, 18rem) ;
 }
 .card_pannel .lables{
     grid-row-start: 2;
