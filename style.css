@@ -25,6 +25,7 @@ li span{
 li a{
     color: rgb(53, 53, 227);
     text-decoration: none;
+    overflow-wrap: break-word;
 }
 
 .double-pannel {
@@ -52,7 +53,7 @@ li a{
 
 .card_pannel ul li img {
     /*position: absolute;*/
-    max-width: 20vw;
+    max-width: 18vw;
     min-width: 6vw;
     /*width:23vw;8*/
     height: auto;
@@ -67,9 +68,9 @@ li a{
   display:grid;
   /*grid-template-columns: minmax(10rem, 12.5rem);*/
   /*grid-template-rows: minmax(1rem,20rem);*/
-  grid-template-rows: 60% 20%;
+  grid-template-rows: 75% 25%;
   
-  aspect-ratio: 11/12;
+  aspect-ratio: 8/7;
   /*width: 100%;*/
 
 
@@ -188,7 +189,7 @@ header{
     display:grid;
    
     grid-template-columns: 400%;
-   font-size:60% ;
+   font-size:70% ;
     grid-template-rows:minmax(0.8rem,1.6rem) minmax(0.8rem,1.6rem);
     /*grid-row-start: 2;*/
 }
@@ -243,7 +244,7 @@ max-height: 70vh;
     display: grid;
     /*grid-auto-rows: minmax(3rem, 15rem);*/
     /*grid-auto-rows: 45%;*/
-    grid-template-columns: minmax(6rem,20rem) minmax(6rem, 20rem) minmax(6rem,20rem) minmax(6rem, 20rem);
+    grid-template-columns: minmax(6rem,25rem) minmax(6rem, 25rem) minmax(6rem,20rem) minmax(6rem, 20rem);
     /*height: 200%;*/
 }
 
