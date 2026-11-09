@@ -53,10 +53,11 @@ li a{
 
 .card_pannel ul li img {
     /*position: absolute;*/
-    max-width: 18vw;
+    max-width: 21vw;
     min-width: 6vw;
     /*width:23vw;8*/
     height: auto;
+    grid-area: 2 / 1 / span 4 / span 3;
     /*grid-column-end:1 ;*/
     /*margin-top: 10%;*/
 }
@@ -68,10 +69,11 @@ li a{
   display:grid;
   /*grid-template-columns: minmax(10rem, 12.5rem);*/
   /*grid-template-rows: minmax(1rem,20rem);*/
-  grid-template-rows: 75% 25%;
+  grid-template-rows: 65% 35%;
   
-  aspect-ratio: 8/7;
+  aspect-ratio: 2/3;
   /*width: 100%;*/
+  /*margin-left: -10vw;*/
 
 
   
@@ -188,9 +190,9 @@ header{
 .lables{
     display:grid;
    
-    grid-template-columns: 400%;
-   font-size:70% ;
-    grid-template-rows:minmax(0.8rem,1.6rem) minmax(0.8rem,1.6rem);
+    /*grid-template-columns: 400%;*/
+    font-size:70%;
+    grid-template-rows:minmax(0.8rem,2rem) minmax(0.8rem,2rem);
     /*grid-row-start: 2;*/
 }
 
@@ -244,8 +246,10 @@ max-height: 70vh;
     display: grid;
     /*grid-auto-rows: minmax(3rem, 15rem);*/
     /*grid-auto-rows: 45%;*/
-    grid-template-columns: minmax(6rem,25rem) minmax(6rem, 25rem) minmax(6rem,20rem) minmax(6rem, 20rem);
+    grid-template-columns:minmax(5rem,25rem) minmax(5rem,25rem)  minmax(5rem,25rem) minmax(5rem,25rem);
     /*height: 200%;*/
+    /*margin-left: -20vw;*/
+    column-gap:6%;
 }
 
 main{
@@ -254,7 +258,8 @@ main{
 }
 .card_pannel .lables{
     grid-row-start: 2;
-    word-break: break-all;
+    /*word-break: break-all;*/
+       
 /*margin-bottom: 15%;*/
  /*grid-template-rows: 100% 100%;*/
 }
