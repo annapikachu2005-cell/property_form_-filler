@@ -56,8 +56,8 @@ li a{
     max-width: 21vw;
     min-width: 6vw;
     /*width:23vw;8*/
-    height: auto;
-    grid-area: 2 / 1 / span 4 / span 3;
+    /*height: auto;*/
+    /*grid-area: 2 / 1 / span 4 / span 3;*/
     /*grid-column-end:1 ;*/
     /*margin-top: 10%;*/
 }
@@ -192,7 +192,7 @@ header{
    
     /*grid-template-columns: 400%;*/
     font-size:70%;
-    grid-template-rows:minmax(0.8rem,2rem) minmax(0.8rem,2rem);
+    grid-template-rows:minmax(0.8rem,1rem) minmax(0.8rem,1rem);
     /*grid-row-start: 2;*/
 }
 
@@ -249,7 +249,7 @@ max-height: 70vh;
     grid-template-columns:minmax(5rem,25rem) minmax(5rem,25rem)  minmax(5rem,25rem) minmax(5rem,25rem);
     /*height: 200%;*/
     /*margin-left: -20vw;*/
-    column-gap:6%;
+    column-gap:20px;
 }
 
 main{
